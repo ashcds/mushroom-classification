@@ -1,4 +1,4 @@
-# Mushroom Classification
+# 🍄 Mushroom Classification
 
 This project focuses on building a machine learning model to classify mushrooms as edible or poisonous. The classification is performed using neural networks and Principal Component Analysis (PCA) for dimensionality reduction.
 
