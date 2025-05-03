@@ -1,31 +1,30 @@
 # 🍄 Mushroom Classification
 
-This project focuses on building a machine learning model to classify mushrooms as edible or poisonous. The classification is performed using neural networks and Principal Component Analysis (PCA) for dimensionality reduction.
+This project focuses on building a machine learning model to classify mushrooms as edible or poisonous. The classification is performed using neural networks as well as a random forest classifier to compare the performance of the two models.
 
 ## Project Overview
 
 Mushroom classification is a critical task in ensuring safety when identifying edible mushrooms. This project leverages advanced machine learning techniques to achieve accurate classification.
 
-## Key Features
-
-- **Neural Networks**: Used for building a robust classification model.
-- **Principal Component Analysis (PCA)**: Applied for feature reduction to improve model performance and reduce computational complexity.
-
 ## Dataset
 
-The dataset contains various features of mushrooms, such as cap shape, color, and odor. Each mushroom is labeled as either edible or poisonous.
+The dataset was acquired from the UC Irvine Machine Learning Repository and contains various features of mushrooms, such as cap shape, color, and odor. Each mushroom is labeled as either edible or poisonous.
 
 ## Project Workflow
 
-1. Data Preprocessing:
+1. **Data Import and EDA:**
     - Handle missing values.
     - Encode categorical features.
-2. Feature Reduction:
+2. **Data Preprocessing**:
     - Apply PCA to reduce dimensionality.
-3. Model Training:
-    - Train a neural network on the processed data.
-4. Evaluation:
+3. **Model Training:**
+    - Build and train a neural network model
+    - Build and train a random forest classifier 
+4. **Model Evaluation:**
     - Assess the model's performance using metrics like accuracy and F1-score.
+5. **Model Comparison & Selection:**
+    - 
+
 
 ## Requirements
 
