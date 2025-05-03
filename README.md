@@ -13,38 +13,26 @@ The dataset was acquired from the UC Irvine Machine Learning Repository and cont
 ## Project Workflow
 
 1. **Data Import and EDA:**
-    - Handle missing values.
-    - Encode categorical features.
+    - Fetch data from UCI repo 
+    - Basic EDA to understand dataset 
 2. **Data Preprocessing**:
-    - Apply PCA to reduce dimensionality.
+    - Impute missing values 
+    - Encode all categorical features
+    - Label encode reponse variable 
 3. **Model Training:**
     - Build and train a neural network model
     - Build and train a random forest classifier 
 4. **Model Evaluation:**
+    - Visualize model performance using Confusion Matrix 
     - Assess the model's performance using metrics like accuracy and F1-score.
 5. **Model Comparison & Selection:**
-    - 
+    - Compare metrics on both models to select best model
 
 
 ## Requirements
 
-- Python 3.x
+- Python 3.8 and above
 - Libraries: NumPy, pandas, scikit-learn, TensorFlow/Keras, matplotlib
-
-## How to Run
-
-1. Clone the repository:
-    ```bash
-    git clone <repository-url>
-    ```
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. Run the training script:
-    ```bash
-    python train_model.py
-    ```
 
 ## Results
 
