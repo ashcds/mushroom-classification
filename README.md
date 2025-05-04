@@ -4,21 +4,21 @@ This project focuses on building a machine learning model to classify mushrooms 
 
 ## Project Overview
 
-Mushroom classification is a critical task in ensuring safety when identifying edible mushrooms. This project leverages advanced machine learning techniques to achieve accurate classification.
+Mushroom classification is a critical task in ensuring safety when identifying edible mushrooms. This project leverages machine learning techniques to achieve accurate classification.
 
 ## Dataset
 
-The dataset was acquired from the UC Irvine Machine Learning Repository and contains various features of mushrooms, such as cap shape, color, and odor. Each mushroom is labeled as either edible or poisonous.
+The dataset was acquired from the UC Irvine Machine Learning Repository and contains various features of mushrooms, such as cap shape, color, and odor. Each mushroom is labeled as either edible or poisonous and the two outcomes are almost equally weighted in the dataset.
 
 ## Project Workflow
-
+Below are the list of steps taken to build the model: 
 1. **Data Import and EDA:**
     - Fetch data from UCI repo 
     - Basic EDA to understand dataset 
 2. **Data Preprocessing**:
     - Impute missing values 
-    - Encode all categorical features
-    - Label encode reponse variable 
+    - One Hot encode all categorical features 
+    - Label encode response variable 
 3. **Model Training:**
     - Build and train a neural network model
     - Build and train a random forest classifier 
@@ -28,13 +28,14 @@ The dataset was acquired from the UC Irvine Machine Learning Repository and cont
 5. **Model Comparison & Selection:**
     - Compare metrics on both models to select best model
 
-
 ## Requirements
 
 - Python 3.8 and above
 - Libraries: NumPy, pandas, scikit-learn, TensorFlow/Keras, matplotlib
 
 ## Results
+
+[Neural Network Confusion Matrix](plots/NN_CMD.png)
 
 The results of the model, including accuracy and visualizations, will be documented here.
 
