@@ -34,15 +34,44 @@ Below are the list of steps taken to build the model:
 - Libraries: NumPy, pandas, scikit-learn, TensorFlow/Keras, matplotlib
 
 ## Results
+I implemented and evaluated two classification models on the UCI Mushroom dataset:
 
-[Neural Network Confusion Matrix](plots/NN_CMD.png)
+### 1. **Neural Network Classifier**
+- Architecture: 2 hidden layers, each with 64 neurons  
+- Activation function: `sigmoid`  
+- Purpose: Binary classification (edible vs. poisonous)
 
-The results of the model, including accuracy and visualizations, will be documented here.
+**Confusion Matrix:**
+
+![Neural Network Confusion Matrix](plots/NN_CMD.png)
+
+---
+
+### 2. **Random Forest Classifier**
+- Standard Scikit-learn implementation using default hyperparameters  
+- Used as a baseline ensemble model
+
+**Confusion Matrix:**
+
+![Random Forest Confusion Matrix](plots/RF_CMD.png)
+
+---
+
+### 📊 Model Comparison
+
+| Metric       | Neural Network | Random Forest |
+|--------------|----------------|----------------|
+| Accuracy     | 1.00           | 1.00           |
+| Precision    | 1.00           | 1.00           |
+| Recall       | 1.00           | 1.00           |
+| F1 Score     | 1.00           | 1.00           |
+
+Both models achieved **perfect performance** on the test data, which is likely due to the highly separable nature of the features in the mushroom dataset. Due to the nature of the dataset, both models are suitable for this classification task. 
 
 ## Future Work
 
-- Experiment with other dimensionality reduction techniques.
-- Optimize the neural network architecture.
+- Experiment with dimensionality reduction techniques (e.g. PCA).
+- Further optimize the neural network architecture.
 - Deploy the model as a web application.
 
 ## License
